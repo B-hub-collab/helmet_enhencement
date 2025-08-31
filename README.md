@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Enhanced Helmet Detection System
 
 一個綜合的安全帽檢測系統，結合物件檢測、姿勢估計和深度學習分類，實現高精度的安全帽佩戴檢測。
