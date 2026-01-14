@@ -151,13 +151,6 @@ python train_helmet_classifier.py \\
 - `swin_tiny_patch4_window7_224` - Vision Transformer
 - `resnet50d` - 改進版 ResNet
 
-#### 訓練特色
-- 🔥 **混合精度訓練 (AMP)**: 節省顯存，加速訓練
-- 📈 **指數移動平均 (EMA)**: 提升模型穩定性
-- 🎯 **標籤平滑**: 減少過擬合
-- ⚡ **Warmup + Cosine 調度**: 優化收斂速度
-- 🎨 **強化數據增強**: 提升泛化能力
-
 ### 步驟 3: 測試完整系統
 
 #### 單圖測試
@@ -364,22 +357,3 @@ python train_helmet_classifier.py --backbone resnet18 --learning_rate 1e-3
 - [SAHI](https://github.com/obss/sahi) - 滑動窗口推理
 - [TIMM](https://github.com/rwightman/pytorch-image-models) - 現代視覺模型
 - PyTorch 團隊 - 深度學習框架
-
----
-
-**🚀 開始你的安全帽檢測之旅吧！如有任何問題，歡迎提交 Issue 或 PR。**
-
-
-
-
-python test_enhanced_pipeline.py \
-    --mode single \
-    --image "/home/brinno_user/test_renew/images/ppe_0583_jpg.rf.c8c328cf2e00c0b2fa2cdd60966199e7.jpg" \
-    --detection_model "/home/brinno_user/models/CHVSODASOD.pth" \
-    --detection_config "/home/brinno_user/work_dirs/dino-4scale_r50_8xb2-24e_coco/CHVSODASOD_config.py" \
-    --pose_model "yolov1x-pose.pt" \
-    --classifier_model "/home/brinno_user/helmet_enhencement/checkpoints_convnext_tiny/best_model.pth" \
-    --output_dir "./results"
-=======
-# helmet_enhencement
->>>>>>> 8936b48e54a9d9d47a20f407b8070646f9bcb0fa
